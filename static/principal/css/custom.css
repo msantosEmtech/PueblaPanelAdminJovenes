@@ -1,0 +1,567 @@
+/* @font-face{
+    font-family: "proxima-nova";
+    src:url("../fonts/proxima-nova/ProximaNova-Reg-webfont.ttf") format('truetype');
+}
+
+@font-face{
+    font-family: "proxima-nova-bold";
+    src:url("../fonts/proxima-nova/ProximaNova-Bold-webfont.ttf") format('truetype');
+} */
+
+@font-face{
+    font-family: AdelleSans-Reg;
+      src: url(../fonts/AdelleSans/AdelleSans-Regular.otf);
+  }
+  @font-face{
+    font-family: AdelleSans-Bold;
+      src: url(../fonts/AdelleSans/AdelleSans-Bold.otf);
+  }
+
+html {
+    font-family: "AdelleSans-Reg";
+}
+
+body{
+    font-family: "AdelleSans-Reg";
+}
+
+li.nav-item{
+    font-family: "AdelleSans-Reg";
+}
+
+.navbar{
+
+    background-color:#EDEDEE !important;
+
+    /* padding-bottom: 1.4rem !important; */
+
+}
+
+button.navbar-toggler{
+
+    background-color: #9A2840  !important;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+
+    color: #00215B !important;
+
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+
+    color: #00215B !important;
+    font-weight: bold !important;
+
+}
+
+ul.navbar-nav{
+    margin-right: 1rem;
+}
+
+.btn.btn-rounded {
+    border-radius: 10px !important;
+}
+
+.btn-alt-primary{
+    color: rgb(255, 255, 255) !important;
+    background-color: #9A2840 !important;
+    border-color: #9A2840 !important;
+}
+.btn-alt-secondary{
+    color: rgb(255, 255, 255) !important;
+    background-color: rgba(187, 159, 121, 1) !important;
+    border-color: rgba(187, 159, 121, 1) !important;
+}
+
+.btn-descargar{
+    color: rgb(0, 0, 0) !important;
+    background-color: rgba(217, 217, 217, 1) !important;
+    border-color: rgba(217, 217, 217, 1) !important;
+}
+
+.btn-alt-blue{
+    color: rgb(255, 255, 255) !important;
+    background-color: #00215B !important;
+    border-color: #00215B !important;
+}
+
+.btnLogin{
+    margin-left: 1rem;
+}
+
+.btnCerrarSesion{
+    margin-left: 1rem;
+}
+
+.btnLogin:hover {
+    background-color: #e4731c !important;
+}
+.btnCerrarSesion:hover{
+    background-color: #a08c70 !important;
+}
+a{
+    font-family: "AdelleSans-Reg" !important;
+    /* color: #F27C21 !important;
+    text-decoration: auto !important; */
+}
+
+h1{
+    font-family: "AdelleSans-Reg" !important;
+}
+
+h2{
+    font-family: "AdelleSans-Reg" !important;
+}
+
+h3{
+    font-family: "AdelleSans-Reg" !important;
+}
+
+h6{
+    font-family: "AdelleSans-Reg" !important;
+}
+
+h5{
+    font-family: "AdelleSans-Reg" !important;
+}
+
+b, strong{
+    font-family: "AdelleSans-Bold" !important;
+}
+
+b {
+    font-family: "AdelleSans-Bold" !important;
+}
+
+button{
+    font-family: "AdelleSans-Reg" !important;
+}
+
+span{
+    font-family: "AdelleSans-Reg" !important;
+}
+
+p{
+    font-family: "AdelleSans-Reg" !important;
+}
+
+span{
+    font-family: "AdelleSans-Reg" !important;
+}
+
+.banner-area{
+    position: relative;
+    z-index: 1;
+    padding-top: 12rem;
+    overflow: hidden;
+    background: linear-gradient(256.17deg, #fff6d6 1.04%, rgb(255,255,255,0) 100%);
+    max-height: 39rem;
+}
+
+.banner-area-inscripcion{
+    position: relative;
+    z-index: 1;
+    padding-top: 30rem;
+    overflow: hidden;
+    background: linear-gradient(256.17deg, #fff6d6 1.04%, rgb(255,255,255,0) 100%);
+    max-height: 39rem;
+}
+
+.carousel-inner {
+    padding-top: 5rem;
+    max-height: 39rem;
+    background-position: center !important;
+}
+
+.carousel-caption{
+
+    left: 7% !important;
+
+    padding-bottom: 15.25rem !important;
+
+}
+
+.carousel-caption-admin{
+    left: 6% !important;
+
+    padding-bottom: 15rem !important;
+}
+
+.banner-area .anner-area-inscripcion .banner-left h1 {
+    line-height: 1.1;
+}
+
+.banner-admin-inicio{
+    margin-top: -440px;
+    color: white;
+    margin-right: 420px;
+}
+
+.container-tarjetas{
+    margin: 100px !important;
+}
+
+.blockquote-custom-controls-alumnos{
+    position: relative;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .banner-area{
+        padding-top: 4rem !important;
+    }
+    .container-tarjetas{
+        margin: 0px !important;
+    }
+
+    .div-texto-banner-alumnos{
+        display: none;
+    }
+
+    .seccion-subtitulo-encabezado{
+        padding-top: 0rem !important;
+    }
+
+    .carousel-caption {
+        left: 13% !important;
+        padding-bottom: 12.25rem !important;
+        padding-left: 4rem;
+    }
+
+    .carousel-caption-admin{
+        padding-bottom: 30px !important;
+        padding-left: 7rem;
+        margin-right: -420px;
+    }
+
+    .banner-admin-inicio{
+        margin-top: -380px !important;
+        color: white !important;
+        margin-left: -80px !important;
+    }
+
+    .imgJovenesHome {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .iconoElemento {
+        margin-left: 40% !important;
+    }
+    /* .descripcionEstudiantes{
+        text-align: justify !important;
+    } */
+
+    .contenidoBannerIn {
+        left: 2rem !important;
+        top: 20% !important;
+    }
+
+    .h1TituloIn{
+        margin-right: 1rem !important;
+    }
+
+    .h2subtituloIn{
+        margin-right: 4rem !important;
+    }
+
+    .iconoBeneficio{
+        margin-left: 8rem !important;
+    }
+
+    .custom-logo-link{
+		background-image:url('../img/etapasMovil.jpg');
+		margin:auto;
+		width:267px;
+		height:1975px;
+        background-repeat: no-repeat;
+	}
+	.custom-logo-link img{
+		display:none;
+	}
+	.site-branding{
+		width:100%;
+	}
+
+    .iconoUniversidad{
+        margin-left: 8rem !important;
+    }
+
+    .btnConoceMas {
+
+        margin-left: 1rem !important;
+    }
+
+    .blockquote-custom-icon{
+        left: 125px !important;
+    }
+
+    .blockquote-custom-controls-alumnos{
+        position: relative;
+        font-size: 5rem;
+    }
+
+    .btnCargarRegistro{
+        margin-top: -70px !important;
+    }
+
+    .btnBuscarAlumno{
+        margin-top: -40px !important;
+        width: 215px !important;
+        float: right !important;
+    }
+
+    .btnEliminar{
+        font-size: 1rem !important;
+        float: right I !important;
+        margin-top: 8px !important;
+        cursor: pointer !important;
+    }
+
+    .btnAlta{
+        font-size: 1rem !important;
+        float: right I !important;
+        margin-top: 8px !important;
+        cursor: pointer !important;
+    }
+
+    .btnEditar{
+        font-size: 1rem !important;
+        float: right I !important;
+        margin-right: 260px !important;
+        margin-top: -35px !important;
+        cursor: pointer !important;
+    }
+
+    .contenedor-select-lenght{
+        float: none !important;
+    }
+
+    .btnAgregarFilaAlumno{
+        margin-top: 15px !important;
+    }
+    .card-emtech{
+        margin-top: 15% !important;
+        margin-bottom: 50% !important;
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+    .btnLogin{
+        margin-left: -4rem !important;
+    }
+    .btnCerrarSesion{
+        margin-left: -4rem !important;
+    }
+    .imglogos{
+        width: 4rem !important;
+    }
+    .login100-more{
+        display: none;
+    }
+    .nombreRol{
+        padding-left: 5px;
+    }
+}
+
+.seccionJovenesHome{
+    background-color: #F7F8FA;
+}
+
+
+.seccionEtapa1 {
+    background-color: #F7F8FA;
+}
+
+.seccionEtapa2 {
+    background-color: #F7F8FA;
+}
+
+.seccionBeneficios {
+    background-color: #F7F8FA;
+}
+
+.btn-outline-primary-alt {
+    color: #F57C20;
+    border-color: #F57C20;
+}
+
+.btn-outline-primary-alt:hover{
+    color: #c45510;
+}
+
+.btnConoceMas:hover {
+    color: #F7F8FA;
+    background-color: #e4731c !important;
+}
+
+.blockquote-custom {
+    position: relative;
+    font-size: 1.1rem;
+}
+
+
+
+.blockquote-custom-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -25px;
+    left: 190px;
+    background-color: #F57C20 !important;
+}
+
+
+
+.banner-admin-registro-alumno{
+    margin-top: -88px !important;
+    color: white;
+    font-size: x-large !important;
+    margin-left: 200px !important;
+    margin-right: 200px !important;
+}
+
+.modal-ordenar {
+    position: absolute;
+    top: 159px !important;
+    right: 100px !important;
+    bottom: 0 !important;
+    left: -295px !important;
+    z-index: 10040 !important;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.card-emtech{
+    border-radius: 0.75rem !important;
+    border:none !important;
+    margin-top: 60px !important;
+    margin-bottom: 55px !important;
+    margin-left: 90px !important;
+    margin-right: 90px !important;
+}
+
+.menor-bottom{
+    margin-bottom:0.1rem;
+}
+
+.titulosAvances{
+    color:#96A5B8;
+}
+
+.pl-0{
+    padding-left:0px;
+}
+
+.centrado-y{
+    display: flex;
+    align-items: center;
+}
+
+.circle-progress-value {
+
+	stroke-width: 10px;
+	stroke: #F27C21;
+	/*stroke-dasharray: 4 1;*/
+
+}
+
+.circle-progress-circle {
+
+	stroke-width: 10px;
+	stroke: #00215B;
+
+}
+
+.circle-progress-text {
+
+	font-weight: bold;
+	/*fill: hsl(180, 80%, 47%);*/
+	fill: #00215B;
+
+}
+input.error {
+    border-color: red;
+}
+.section-login{
+    margin-top: 6.3rem !important;
+}
+.divBannerLogin{
+    background-image: url('../img/bannerLogin.png') !important;
+    background-size: cover !important;
+}
+.h4TituloInicioSesion{
+    margin-top: 60px !important;
+}
+#formLogin{
+    margin: 40px !important;
+}
+.form-control:focus{
+    border-color: #9A2840;
+    box-shadow: 0 0 0 0.25rem rgba(154, 40, 64, 0.25);
+}
+
+.limiter{
+    width: 100%;
+    margin: 0 auto;
+}
+.container-login100{
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(237, 237, 238, 0.2);
+}
+.wrap-login100{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+.login100-form{
+    width: 560px;
+    min-height: 100vh;
+    display: block;
+    background-color: #f7f7f7;
+    padding: 173px 55px 55px;
+}
+.login100-more{
+    width: calc(100% - 560px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.login100-form-title {
+    display: block;
+    width: 100%;
+    font-size: 29px;
+    color: #000;
+    line-height: 1.2;
+    text-align: center;
+}
+.p-b-59 {
+    padding-bottom: 59px;
+}
+    .titulo-cafe{
+        color: rgba(187, 159, 121, 1);
+    }
