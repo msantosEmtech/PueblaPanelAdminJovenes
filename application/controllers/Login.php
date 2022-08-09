@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Login extends CI_Controller {
 
     public function __construct(){
+        header('Access-Control-Allow-Origin: *');
 		parent::__construct();
 
 		$this->load->model('usuario/UsuarioModel');
