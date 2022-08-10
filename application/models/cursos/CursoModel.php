@@ -17,4 +17,14 @@ class CursoModel extends CI_Model{
         $this->db->where($condicional);
         return $this->db->get()->row_array();
     }
+
+    public function GetTotalPorcentajeByIdCurso($curso){
+        $sqlProcedure = "CALL `sp_obtener_total_by_curso`($curso)";
+        $query_result = $this->db->query($sqlProcedure);
+        $result = $query_result->row_array();
+        $query_result->next_result();
+        $query_result->free_result();
+
+        return $result;
+    }
 }

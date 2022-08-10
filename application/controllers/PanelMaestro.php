@@ -29,8 +29,10 @@ class PanelMaestro extends CI_Controller {
 		$data['idRol'] = $idRol;
 
 		$linkJsAlert = base_url('static/plugins/sweetalert/sweetalert2.all.min.js');
+		$linkJsVista = base_url('static/principal/js/dashboard/dashboardAdmin.js');
 
 		$footer = array(
+			'scriptVista' => '<script src="'.$linkJsVista.'"></script>',
 			'scriptAlert' => '<script src="'.$linkJsAlert.'"></script>'
 		);
 
@@ -41,5 +43,13 @@ class PanelMaestro extends CI_Controller {
 			$this->load->view('panel/dashboard', $data);
 		}
 		$this->load->view('footerAdmin', $footer);
+	}
+
+	public function ObtenerTotalCirculoCurso(){
+		$curso = $this->input->post('curso');
+
+		$result = $this->CursoModel->GetTotalPorcentajeByIdCurso($curso);
+
+		echo json_encode($result);
 	}
 }
