@@ -27,4 +27,24 @@ class CursoModel extends CI_Model{
 
         return $result;
     }
+
+    public function GetTotalAvancesByIdCurso($curso){
+        $sqlProcedure = "CALL `sp_obtener_avances_by_curso`($curso)";
+        $query_result = $this->db->query($sqlProcedure);
+        $result = $query_result->row_array();
+        $query_result->next_result();
+        $query_result->free_result();
+
+        return $result;
+    }
+
+    public function GetTotalProgressBar(){
+        $sqlProcedure = "CALL `sp_avance_todos_cursos`()";
+        $query_result = $this->db->query($sqlProcedure);
+        $result = $query_result->result_array();
+        $query_result->next_result();
+        $query_result->free_result();
+
+        return $result;
+    }
 }

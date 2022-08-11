@@ -52,4 +52,24 @@ class PanelMaestro extends CI_Controller {
 
 		echo json_encode($result);
 	}
+
+	public function ObtenerAvancesAdmin(){
+		$curso = $this->input->post('curso');
+
+		$result = $this->CursoModel->GetTotalAvancesByIdCurso($curso);
+
+		echo json_encode($result);
+	}
+
+	public function ObtenerAvanceProgressBar(){
+		$result = $this->CursoModel->GetTotalProgressBar();
+
+		return $result;
+	}
+
+	public function ObtenerAvancePorCursoAdmin(){
+		$result = $this->ObtenerAvanceProgressBar();
+
+		echo json_encode($result);
+	}
 }
