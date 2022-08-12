@@ -68,7 +68,7 @@ class Login extends CI_Controller {
             $dataGuardar = array(
                 'IdUsuario' => $idUsuario, 
                 'Codigo' => $codigoGenerado, 
-                'FechaRegistro' => $fechaActual
+                'FechaVigencia' => $fechaActual
             );
             $result = $this->UsuarioRestaurarModel->Agregar($dataGuardar);
             if($result){
